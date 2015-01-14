@@ -1,0 +1,143 @@
+*{
+  /* zero out padding and margin */
+  margin: 0;
+  padding: 0;
+}
+
+/************* Nav bar CSS ****************/
+#navbar {
+  /* TODO: change scrollspy into dots */
+  /* TODO: make nav bar on rightside */
+  background: rgba(135,135,135,0.75);
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+
+#navbar li {
+  padding: 5px;
+  float: left;
+  font-size: medium;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+#navbar a:hover {
+  color: red;
+}
+
+#navbar a:active {
+  color: red;
+}
+
+
+/*****************************************/
+
+
+/************* Title Page CSS ****************/
+#titlepage {
+
+  height: 780px;
+
+  background: url('luckycow.jpg');
+  background-attachment : fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.title-transparent-layer {
+
+  margin-top: 52px;
+  padding: 5px 0px;
+  background: rgba(255, 0, 0,0.75);
+  width: 75%;
+}
+
+.title-transparent-layer h1 {
+
+  letter-spacing:5px;
+  font-size: 35pt;
+  color:white;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+
+}
+/*****************************************/
+
+
+/************* Content CSS ****************/
+
+.parallax {
+
+  /* remove horizontal scroll */
+  overflow-x: hidden;
+
+  display: block;
+
+  /*   parallax effect */
+  background-attachment : fixed;
+  background-position: 50% 50%;
+
+  /* Set image to always fill background */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /* Preserve aspet ratio when zooming in/out*/
+  min-width: 600px;
+  min-height: 600px;
+
+  height: 1020px;
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.transparent-layer{
+
+  /* transparent layer */
+  background: rgba(0, 0, 0, 0.3);
+
+  /* TODO: find a better way to make the transparent
+  background not cover the whole picture */
+  margin-top: 50px;
+  height: 500px;
+  width: 100%;
+}
+
+.transparent-layer h1{
+
+  /* text for transparent layer */
+  text-align: center;
+  color:white;
+  font-size: 5em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/************* Change background ****************/
+
+#aboutpage {
+
+  /* Background image */
+  background-image: url('bg1.jpg');
+}
+
+#travelpage {
+
+  /* Background image */
+  background-image: url('bg3-2.jpg');
+}
+
+#attractionpage {
+
+  /* Background image */
+  background-image: url('bg4bw2.jpg');
+}
+/*****************************************/
