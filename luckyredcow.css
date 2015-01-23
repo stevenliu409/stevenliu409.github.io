@@ -1,7 +1,10 @@
-*{
+html, body{
   /* zero out padding and margin */
   margin: 0;
   padding: 0;
+
+  /* make content always full screen regardless of window size */
+  height: 100%;
 }
 
 /************* Nav bar CSS ****************/
@@ -43,10 +46,15 @@
 /************* Title Page CSS ****************/
 #titlepage {
 
-  height: 780px;
+  height:100%;
+}
+
+#titlepage-picture {
+
+  height: 100%;
 
   background: url('luckycow.jpg');
-  background-attachment : fixed;
+  background-attachment : scroll;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -81,8 +89,7 @@
   display: block;
 
   /*   parallax effect */
-  background-attachment : fixed;
-  background-position: 50% 50%;
+  background-attachment: scroll;
 
   /* Set image to always fill background */
   -webkit-background-size: cover;
@@ -94,7 +101,7 @@
   min-width: 600px;
   min-height: 600px;
 
-  height: 1020px;
+  height: 100%;
 
   max-width: 100%;
   max-height: 100%;
@@ -107,9 +114,10 @@
 
   /* TODO: find a better way to make the transparent
   background not cover the whole picture */
-  margin-top: 50px;
-  height: 500px;
+  margin-top: 3%;
+  height: 90%;
   width: 100%;
+  position: center;
 }
 
 .transparent-layer h1{
@@ -126,7 +134,7 @@
 #aboutpage {
 
   /* Background image */
-  background-image: url('bg1.JPG');
+  background-image: url('bg1.jpg');
 }
 
 #travelpage {
@@ -139,5 +147,11 @@
 
   /* Background image */
   background-image: url('bg4bw2.jpg');
+}
+
+#cuisine {
+
+  /* Background image */
+  background-image: url('bg6.jpg');
 }
 /*****************************************/
