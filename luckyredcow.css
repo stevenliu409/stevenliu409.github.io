@@ -39,7 +39,6 @@ html, body{
   color: red;
 }
 
-
 /*****************************************/
 
 
@@ -114,9 +113,10 @@ html, body{
 
   /* TODO: find a better way to make the transparent
   background not cover the whole picture */
-  margin-top: 3%;
-  height: 90%;
-  width: 100%;
+  margin-top: 52px;
+  margin-left: 1%;
+  height: 10%;
+  width: 75%;
   position: center;
 }
 
@@ -134,7 +134,7 @@ html, body{
 #aboutpage {
 
   /* Background image */
-  background-image: url('bg1.JPG');
+  background-image: url('bg1.jpg');
 }
 
 #travelpage {
@@ -152,6 +152,6 @@ html, body{
 #cuisine {
 
   /* Background image */
-  background-image: url('bg6.JPG');
+  background-image: url('bg6.jpg');
 }
 /*****************************************/
