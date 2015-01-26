@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Fukushima Trip</title>
-  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-  
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+
   <!-- *WARNING* Add https infront of all links when on local file.
-        Remove it when uploading to server or else css and scripts won't work -->
+  Remove it when uploading to server or else css and scripts won't work -->
 
   <!-- CSS Files -->
   <link rel="stylesheet" href="luckyredcow.css">
@@ -17,8 +17,8 @@
 
 
   <!-- *WARNING* order of the scripts matter.
-        Bootstrap javascript requires jQuery therefore jQuery must be loaded first.
-        Use defer to make sure order is maintained-->
+  Bootstrap javascript requires jQuery therefore jQuery must be loaded first.
+  Use defer to make sure order is maintained-->
 
   <!-- Scripts -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" defer></script>
@@ -44,19 +44,54 @@
     </div>
   </div>
 
-  <div id="aboutpage" class="parallax">
+  <div id="aboutpage" class="resize">
     <div class="transparent-layer"><h1>About</h1></div>
   </div>
 
-  <div id="travelpage" class="parallax">
+  <div id="travelpage" class="resize">
     <div class="transparent-layer"><h1>Travel</h1></div>
   </div>
 
-  <div id="attractionpage" class="parallax">
-    <div class="transparent-layer"> <h1>Attractions</h1> </div>
+  <div id="attractionpage" class="resize carousel slide" data-ride="carousel">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#attractionpage" data-slide-to="0" class="active"></li>
+      <li data-target="#attractionpage" data-slide-to="1"></li>
+      <li data-target="#attractionpage" data-slide-to="2"></li>
+    </ol>
+
+    <div class="resize carousel-inner">
+      <div id="attraction-one" class= "active item resize">
+        <div class="transparent-layer"> <h1>Attractions</h1> </div>
+      </div>
+      <div class="item resize">
+        <h2>Slide 2</h2>
+        <div class="carousel-caption">
+          <h3>Second slide label</h3>
+          <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+        </div>
+      </div>
+
+      <div id="attraction-three" class="item resize">
+        <div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#attractionpage" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control right" href="#attractionpage" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
   </div>
 
-  <div id="cuisine" class="parallax">
+
+
+  <div id="cuisine" class="resize carousel slide" data-ride="carousel">
     <div class="transparent-layer"> <h1>Cuisine</h1> </div>
   </div>
 </body>
