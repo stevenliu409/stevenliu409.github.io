@@ -1,17 +1,24 @@
-*{
+html, body{
   /* zero out padding and margin */
   margin: 0;
   padding: 0;
+
+  /* make content always full screen regardless of window size */
+  height: 100%;
 }
 
 /************* Nav bar CSS ****************/
 #navbar {
   /* TODO: change scrollspy into dots */
-  /* TODO: make nav bar on rightside */
+  /* TODO: change scrollspy hightlight color to white */
   background: rgba(135,135,135,0.75);
   width: 100%;
   top: 0;
   position: fixed;
+}
+
+#navbar ul {
+  float: right;
 }
 
 #navbar li {
@@ -20,8 +27,8 @@
   font-size: medium;
   font-weight: bold;
   font-family: 'Source Sans Pro', sans-serif;
-
 }
+
 
 #navbar a {
   text-decoration: none;
@@ -36,23 +43,24 @@
   color: red;
 }
 
-
 /*****************************************/
 
 
 /************* Title Page CSS ****************/
 #titlepage {
+  height:100%;
+}
 
-  height: 780px;
+#titlepage-picture {
+  height: 100%;
 
   background: url('luckycow.jpg');
-  background-attachment : fixed;
+  background-attachment : scroll;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .title-transparent-layer {
-
   margin-top: 52px;
   padding: 5px 0px;
   background: rgba(255, 0, 0,0.75);
@@ -60,29 +68,23 @@
 }
 
 .title-transparent-layer h1 {
-
   letter-spacing:5px;
   font-size: 35pt;
   color:white;
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
-
 }
+
 /*****************************************/
 
 
 /************* Content CSS ****************/
 
-.parallax {
-
+.resize {
   /* remove horizontal scroll */
   overflow-x: hidden;
 
   display: block;
-
-  /*   parallax effect */
-  background-attachment : fixed;
-  background-position: 50% 50%;
 
   /* Set image to always fill background */
   -webkit-background-size: cover;
@@ -94,26 +96,26 @@
   min-width: 600px;
   min-height: 600px;
 
-  height: 1020px;
-
   max-width: 100%;
   max-height: 100%;
+
+  /* height covers screen regardless of window size */
+  height: 100%;
+
+  z-index:-1;
 }
 
 .transparent-layer{
-
   /* transparent layer */
   background: rgba(0, 0, 0, 0.3);
 
-  /* TODO: find a better way to make the transparent
-  background not cover the whole picture */
-  margin-top: 50px;
-  height: 500px;
-  width: 100%;
+  margin-top: 52px;
+  height: 10%;
+  width: 75%;
+  position: center;
 }
 
 .transparent-layer h1{
-
   /* text for transparent layer */
   text-align: center;
   color:white;
@@ -123,21 +125,34 @@
 
 /************* Change background ****************/
 
-#aboutpage {
+/* TODO: Add image carousel to each section */
 
-  /* Background image */
-  background-image: url('bg1.JPG');
+#aboutpage {
+  background-image: url('fuku6.jpg');
 }
 
 #travelpage {
-
-  /* Background image */
-  background-image: url('bg3-2.jpg');
+  background-image: url('fuku3.jpg');
 }
 
-#attractionpage {
 
-  /* Background image */
-  background-image: url('bg4bw2.jpg');
+
+#attraction-one {
+  background-image: url('fuku1.jpg');
+}
+#attraction-two {
+  background-image: url('fuku2.jpg');
+}
+#attraction-three {
+  background-image: url('fuku4.jpg');
+}
+
+
+
+#festival-one {
+  background-image: url('fuku7.jpg');
+}
+#festival-two {
+  background-image: url('fuku5.jpg');
 }
 /*****************************************/
