@@ -1,8 +1,3 @@
-// function scrollToAnchor(aid){
-//     var aTag = $("a[name='"+ aid +"']");
-//     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-// }
-
 $(document).ready(function() {
   // hide #back-top first
   $("#back-to-top").hide();
@@ -22,7 +17,13 @@ $(document).ready(function() {
       // This prevents the default action of the anchor tag to be called.
       //  Can be interchanged with event.preventDefault()
       return false;
+    });
 
+    $("#navbar a").click(function(event) {
+      var link = $(event.target).attr("href");
+      var jumpToTag = $(link);
+      $('html,body').animate({scrollTop: jumpToTag.offset().top},800);
+      return false;
     });
   });
 });
