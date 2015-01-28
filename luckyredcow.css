@@ -89,7 +89,7 @@ html, body{
   height: 100%;
 
   background: url('Images/luckycow.jpg');
-  background-attachment : scroll;
+  background-attachment : fixed;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -119,6 +119,8 @@ html, body{
   overflow-x: hidden;
 
   display: block;
+
+  background-attachment : fixed;
 
   /* Set image to always fill background */
   -webkit-background-size: cover;

@@ -35,8 +35,6 @@ $(document).ready(function() {
   });
 });
 
-
-
 // Helper Functions
 // Taken from http://stackoverflow.com/a/18445654
 function stopScroll() {
