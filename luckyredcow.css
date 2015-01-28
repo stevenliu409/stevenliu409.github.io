@@ -46,6 +46,40 @@ html, body{
 /*****************************************/
 
 
+/************* Home Button CSS ****************/
+
+#back-to-top {
+  bottom: 0;
+  position: fixed;
+  margin-left: 10px;
+}
+
+#back-to-top span {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-bottom: 7px;
+  background: rgba(135,135,135,0.75) url(Images/cd-top-arrow.svg) no-repeat center center;
+
+  /* rounded corners */
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+
+  /* transition */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+}
+
+
+#back-to-top a:hover span {
+  background: rgba(135,135,135,1) url(Images/cd-top-arrow.svg) no-repeat center center;
+}
+
+/*****************************************/
+
+
 /************* Title Page CSS ****************/
 #titlepage {
   height:100%;
@@ -54,7 +88,7 @@ html, body{
 #titlepage-picture {
   height: 100%;
 
-  background: url('luckycow.jpg');
+  background: url('Images/luckycow.jpg');
   background-attachment : scroll;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -125,34 +159,32 @@ html, body{
 
 /************* Change background ****************/
 
-/* TODO: Add image carousel to each section */
-
 #aboutpage {
-  background-image: url('fuku6.jpg');
+  background-image: url('Images/fuku6.jpg');
 }
 
 #travelpage {
-  background-image: url('fuku3.jpg');
+  background-image: url('Images/fuku3.jpg');
 }
 
 
 
 #attraction-one {
-  background-image: url('fuku1.jpg');
+  background-image: url('Images/fuku1.jpg');
 }
 #attraction-two {
-  background-image: url('fuku2.jpg');
+  background-image: url('Images/fuku2.jpg');
 }
 #attraction-three {
-  background-image: url('fuku4.jpg');
+  background-image: url('Images/fuku4.jpg');
 }
 
 
 
 #festival-one {
-  background-image: url('fuku7.jpg');
+  background-image: url('Images/fuku7.jpg');
 }
 #festival-two {
-  background-image: url('fuku5.jpg');
+  background-image: url('Images/fuku5.jpg');
 }
 /*****************************************/
