@@ -11,9 +11,8 @@ $(document).ready(function() {
     });
 
     $("#back-to-top a").click(function(event) {
-      stopScroll();
 
-      $('html, body').animate({scrollTop:0}, 1500, continueScroll);
+      $('html, body').stop().animate({scrollTop:0}, 500);
 
       // This prevents the default action of the anchor tag to be called.
       //  Can be interchanged with event.preventDefault()
@@ -23,13 +22,12 @@ $(document).ready(function() {
 
     // Navbar scrolling animation javascript
     $("#navbar a").click(function(event) {
-      stopScroll();
 
       // else do the scroll animation
       var link = $(event.target).attr("href");
       var jumpToTag = $(link);
 
-      $('html,body').animate({scrollTop: jumpToTag.offset().top}, 800, continueScroll);
+      $('html,body').stop().animate({scrollTop: jumpToTag.offset().top}, 500);
       return false;
     });
 
@@ -38,18 +36,4 @@ $(document).ready(function() {
       loopBottom: true,
       scrollBar: true
     });
-
 });
-
-// Helper Functions
-// Taken from http://stackoverflow.com/a/18445654
-function stopScroll() {
-  // if user scrolls while animation, cancel the animation
-  $("html, body").bind("scroll mousedown wheel keyup", function(){
-    $('html, body').stop();
-  });
-}
-
-function continueScroll() {
-  $("html, body").unbind("scroll mousedown wheel keyup");
-}
