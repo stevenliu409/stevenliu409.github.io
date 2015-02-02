@@ -34,7 +34,7 @@ $(document).ready(function() {
 
   $('#fullpage').fullpage({
     loopTop: true,
-    loopBottom: true,
-    scrollBar: true
+    scrollBar: true,
+    scrollingSpeed: 900
   });
 });

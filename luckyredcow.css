@@ -9,7 +9,6 @@ html, body{
 
 /************* Nav bar CSS ****************/
 #navbar {
-  /* TODO: change scrollspy into dots */
   /* TODO: change scrollspy hightlight color to white */
   background: rgba(135,135,135,0.75);
   width: 100%;
@@ -158,8 +157,41 @@ html, body{
   /* text for transparent layer */
   text-align: center;
   color:white;
-  font-size: 5em;
+  font-size: 50pt;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about-text-layer{
+  margin-top: 52px;
+  margin-left: 15%;
+  padding: 20px;
+  height: 40%;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.6);
+
+}
+
+.about-text-layer p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16pt;
+  text-align: left;
+  color: black;
+}
+
+.travel-text-layer {
+  margin-top: 52px;
+  margin-left: 15%;
+  padding: 20px;
+  height: 55%;
+  width: 70%;
+  background: rgba(104, 0, 0, 0.6);
+}
+
+.travel-text-layer p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16pt;
+  text-align: left;
+  color: white;
 }
 
 /************* Change background ****************/
