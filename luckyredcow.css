@@ -9,6 +9,7 @@ html, body{
 
 /************* Nav bar CSS ****************/
 #navbar {
+  /* TODO: change scrollspy into dots */
   /* TODO: change scrollspy hightlight color to white */
   background: rgba(135,135,135,0.75);
   width: 100%;
@@ -188,6 +189,40 @@ html, body{
 }
 
 .travel-text-layer p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16pt;
+  text-align: left;
+  color: white;
+}
+
+.attraction-text-layer {
+  margin-top: 52px;
+  margin-left: 15%;
+  padding: 20px;
+  height: 40%;
+  width: 70%;
+  background: rgba(139, 69, 19, 0.5);
+
+}
+
+.attraction-text-layer p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16pt;
+  text-align: left;
+  color: white;
+}
+
+.festival-text-layer {
+  margin-top: 52px;
+  margin-left: 15%;
+  padding: 20px;
+  height: 35%;
+  width: 70%;
+  background: rgba(128, 0, 128, 0.6);
+
+}
+
+.festival-text-layer p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16pt;
   text-align: left;
