@@ -165,7 +165,6 @@ html, body{
   margin-top: 52px;
   margin-left: 15%;
   padding: 20px;
-  height: 40%;
   width: 70%;
   background: rgba(255, 255, 255, 0.6);
 
@@ -182,7 +181,6 @@ html, body{
   margin-top: 52px;
   margin-left: 15%;
   padding: 20px;
-  height: 55%;
   width: 70%;
   background: rgba(104, 0, 0, 0.6);
 }
@@ -198,7 +196,6 @@ html, body{
   margin-top: 52px;
   margin-left: 15%;
   padding: 20px;
-  height: 40%;
   width: 70%;
   background: rgba(139, 69, 19, 0.5);
 
@@ -215,7 +212,6 @@ html, body{
   margin-top: 52px;
   margin-left: 15%;
   padding: 20px;
-  height: 35%;
   width: 70%;
   background: rgba(128, 0, 128, 0.6);
 
@@ -230,10 +226,18 @@ html, body{
 
 .caption-text{
   background: rgba(0, 0, 0, 0.4);
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.caption-text h3 {
+  font-size: 30pt;
+  font-weight: bold;
+
 }
 
 .caption-text p{
-  font-size: 12pt;
+  font-size: 16pt;
 }
 /*****************************************/
 
