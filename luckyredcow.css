@@ -9,7 +9,6 @@ html, body{
 
 /************* Nav bar CSS ****************/
 #navbar {
-  /* TODO: change scrollspy into dots */
   /* TODO: change scrollspy hightlight color to white */
   background: rgba(135,135,135,0.75);
   width: 100%;
@@ -228,6 +227,16 @@ html, body{
   text-align: left;
   color: white;
 }
+
+.caption-text{
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.caption-text p{
+  font-size: 12pt;
+}
+/*****************************************/
+
 
 /************* Change background ****************/
 
